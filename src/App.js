@@ -21,7 +21,7 @@ function App() {
   });
   // Create DidUpdate with useEffect inside it can print "App Component Did Update" & state value here
   useEffect(() => {
-    if (state.isLogin) {
+    if (state.user.email) {
       console.log("App Component Did Update");
       console.log(state);
     }
